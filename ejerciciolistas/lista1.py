@@ -1,6 +1,5 @@
 import random
 import math
-import statistics
 
 lista=[]
 #Suma y promedio de la lista
