@@ -48,9 +48,28 @@ for n in lista:
         moda = n
 print ("La moda es: ", moda )
 
+rep=[]
+for i in range(len(lista)):
+    if moda== lista[i]:
+        rep.append(i)
+print(f'El numero {moda} esta en la posicion {rep}')
+
 for i in range(len(lista)):
     media=suma/len(lista)
 print(f'La media es: {media}')
+
+m=lista
+m.sort()
+if tam % 2 == 0:
+    y = (tam // 2)
+    j = y -1
+    med = (m[y] + m[j]/2)
+    print(f'La mediana es: {med}')
+if tam % 2 != 0:
+    div = tam // 2
+    print(f'La mediana es {m[div]}')
+
+
 
 for i in lista:
     i = resta - (suma) / (prom)
@@ -59,3 +78,22 @@ for i in lista:
     division = suma / prom
 raiz = math.sqrt(division)
 print((f'La desviacion estandar es: {raiz}'))
+
+for i in range(tam):
+    for j in range(i+1,tam):
+        if lista[i] > lista[j]:
+            aux = lista[i]
+            lista[i] = lista[j]
+            lista[j] = aux
+print(lista)
+
+for i in range(tam):
+    for j in range(i+1,tam):
+        if lista[i] < lista[j]:
+            aux = lista[i]
+            lista[i] = lista[j]
+            lista[j] = aux
+print((lista))
+
+
+
