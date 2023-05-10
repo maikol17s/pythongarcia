@@ -104,15 +104,15 @@ tamtotal = tam + tam2
 prod = sumtotal / tamtotal
 print(f'El promedio conjunto es: {prod}')
 
-if prod1 > num:
-     print(f'Esta por arriba del arreglo')
-else:
-    print(f'Esta por debajo del arreglo')
+#if prod1 > num:
+#     print(f'Esta por arriba del arreglo')
+#else:
+#    print(f'Esta por debajo del arreglo')
 
-if prod2 > num2:
-    print(f'Esta por arriba del arreglo')
-else:
-    print(f'Esta por debajo del arreglo')
+#if prod2 > num2:
+#    print(f'Esta por arriba del arreglo')
+#else:
+#    print(f'Esta por debajo del arreglo')
 
 if par > par2:
     print(f'La primera lista tiene un total de {par} pares')
