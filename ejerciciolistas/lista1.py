@@ -94,6 +94,3 @@ for i in range(tam):
             lista[i] = lista[j]
             lista[j] = aux
 print((lista))
-
-
-
