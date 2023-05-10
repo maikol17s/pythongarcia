@@ -15,25 +15,34 @@ def promediolista(lista):
     return sumalista(lista)/len(lista)
 
 
-def mayorlista(lista):
-    mayor=0
+def maylista(lista):
+    maximo=lista[0]
     for i in lista:
-        if i>mayor:
-            mayor=i
-    return mayorlista
+        if i>maximo:
+            maximo=i
+    return maximo
 
-
-def menorlista(lista):
-    menor=100
+def menlista(lista):
+    minimo=lista[0]
     for i in lista:
-        if i<menor:
-            menor=i
-    return menorlista
+        if i<minimo:
+            minimo=i
+    return minimo
+
+def asc(l1):
+    for i in l1:
+        for j in range(i+1,20):
+            if l1[i] > l1[j]:
+                aux = l1[i]
+                l1[i] = l1[j]
+                l1[j] = aux
+    return l1
 
 l1=llenarlista(5,20)
 print(l1)
 print()
-print(sumalista(l1))
-print(promediolista(l1))
-print(mayorlista(l1))
-print(menorlista(l1))
+print('La suma es:',sumalista(l1))
+print('El promedio es:',promediolista(l1))
+print('El mayor es: ',maylista(l1))
+print('El menor es: ', menlista(l1))
+print(asc(l1))
