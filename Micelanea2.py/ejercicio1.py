@@ -42,14 +42,6 @@ def moda(lista):
             moda1= n
     return f'La moda es: {moda1} ya que se repite {max}'
 
-def posicion(lista):
-    repmoda=[]
-    for n in range(len(l1)):
-        if moda == l1[n]:
-            repmoda.append(n)
-    return f'La {moda} esta en la posicon {repmoda}'
-
-
 def mediana(lista):
     if len(lista) %2!=0:
         pos = (len(lista)+1)//2
@@ -86,7 +78,6 @@ l1=llenarlista(5,10)
 print(l1)
 print(moda(l1))
 print(f'La mediana es: ',mediana(l1))
-print (f'El {moda} esta en la posicion {posicion}')
 print()
 print('La suma es:',sumalista(l1))
 print('El promedio es:',promediolista(l1))
