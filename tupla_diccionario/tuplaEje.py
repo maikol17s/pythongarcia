@@ -22,7 +22,7 @@ print(t2)
 print(t3)
 
 my_tuple = (11, 104, 10, 1000) 
-print(sort(my_tuple))
+#print(#sort(my_tuple))
 #my_tuple.append(10000)
 my_tuple=my_tuple+(100,)
 #del my_tuple[0]
