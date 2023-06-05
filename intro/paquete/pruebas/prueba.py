@@ -1,6 +1,6 @@
 from sys import path
 
-path.append('..\\paquete')
+path.append('..\\intro\\paquete')
 #path.append ('C:\\paquete')
 
 
