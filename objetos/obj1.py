@@ -2,14 +2,7 @@ class persona:
     def __init__(self, nombre, documento):
         self.__nombre=nombre
         self.__documento=documento
-    def __init__(self, cursos):
-        self.__cursos=[]
-
-    def subirCursos(self, curso):
-        self.__curso += [curso]
-
-    def getCursos(self):
-        return self.__curso
+        self.__curso=[]
 
     def getNombre(self):
         return self.__nombre
@@ -20,27 +13,33 @@ class persona:
         return self.__documento
     def setDocumento(self,documento):
         self.__documento=documento
+    
+    def agregarCurso(self, curso):
+        self.__curso.append(curso)
+
+    def getCursos(self):
+        return self.__curso
 
     def getDatos(self):
-        return f'{self.__nombre}, {self.__documento}'
-
+        return f'{self.__nombre}, {self.__documento},{self.__curso}'
 
 p=persona('Ana',123)
-print(p.getCursos())
-p.subirCursos(101)
-p.subirCursos(501)
-p.subirCursos(301)
+print(p.getNombre())
 q=persona('Ronald',321)
-print(q.getCursos())
+print(q.getNombre())
 
+p.agregarCurso('Matematicas')
+print(p.getCursos())
+q.agregarCurso('Ingles')
+print(q.getCursos())
 
 p.setNombre('Maria')
 print(p.getNombre())
 q.setNombre('Jhon')
 print(q.getNombre())
 
-
 p.getDatos()
+
 print(p.getDatos())
 q.getDatos()
 print(q.getDatos())
