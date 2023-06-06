@@ -36,7 +36,7 @@ class empleado:
             return ipc
     def  horasExtras(self, horas):
         if horas > 40:
-            return f"No se admiten mas de 2 horas diarias"
+            return f"incorrecto"
         else:
             suma = 4833 * horas
             self.__salario = self.__salario + suma
