@@ -34,11 +34,11 @@ class empleado:
             incremento = self.__salario + ipc
             self.__salario = incremento
             return ipc
-    def  horasExtras(self, horas):
-        if horas_trab > 23:
+    def  horasExtras(self, horas): 
+        if horas > 10:
             return f"incorrecto"
         else:
-            suma = 4833 * horas_trab
+            suma = 4833 * horas
             self.__salario = self.__salario + suma
             return suma
 
@@ -60,9 +60,9 @@ print()
 horas_trab=int(input('Ingrese horas trabajadas: '))
 salario_hora= p.salarioHora(horas_trab)
 print(f'El empleado {p.getNombre()} gana {salario_hora:.2f} por hora')
-print()
 print(f'El incremeto es de: {p.incremento()}')
-print(p.horasExtras(9))
+print(p.horasExtras(15))
+print()
 print(p.getdatos())
 
 print()
@@ -70,13 +70,12 @@ print()
 q=empleado('Pedro','ejecutivo',2000000)
 print(q.getNombre())
 print(q.getCargo())
-print()
 horas_trab=int(input('Ingrese horas trabajadas: '))
 salario_hora= q.salarioHora(horas_trab)
 print(f'El empleado {q.getNombre()} gana {salario_hora:.2f} por hora')
-print()
 print(f'El incremeto es de: {q.incremento()}')
-print(q.horasExtras(9))
+print(q.horasExtras(8))
 print(f'La suma de los salarios es: {q.getSuma()}')
 print(f'El promedio de los salarios es de: {q.prome_Salarios()}')
+print()
 print(q.getdatos())
