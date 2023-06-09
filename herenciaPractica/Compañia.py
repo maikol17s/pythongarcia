@@ -1,9 +1,9 @@
 from Cliente import *
 from Producto import *
 class Compañia(cliente):
-    def __init__(self,nombre,telefono,direccion,correo,tipo,precio):
+    def __init__(self,nombre,telefono,direccion,correo,tipo):
         super().__init__(tipo)
-        super().__init__(nombre,id,precio)
+        #super().__init__(nombre,id,precio)
         self.__nombre= nombre
         self.__telefono=telefono
         self.__direccion=direccion
