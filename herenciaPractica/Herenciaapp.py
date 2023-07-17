@@ -19,7 +19,7 @@ print(f'La rebaja es de: {p2.Rebaja()}')
 print()
 
 c2=Compañia('chocoleit',99910022,'choco@gmail.com','industrial')
-l1=Producto('Cuadernos',500000,2)
+l1=Producto ('Cuadernos',500000,2)
 l2=Producto('Carpetas',250000,2)
 print(c2.getdatos())
 c2.agregarProducto(l1)
