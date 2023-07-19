@@ -8,13 +8,11 @@ def diccionarioExcepciones():
                 print()
             else:
                 valor = input('Ingrese el valor de la clave:')
-                dic[clave] = valor
-    except KeyboardInterrupt:
-        print('\nHa terminado de agregar elementos al diccionario.')
+                dic[clave] = valor 
     except:
         print('Ha ocurrido un error.')
     print(f'DICCIONARIO: {dic}')
-    
+
     print()
 
     while True:

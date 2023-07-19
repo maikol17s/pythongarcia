@@ -10,8 +10,6 @@ def listasExcepciones():
                 lista.append(elemento)
     except ValueError:
         print('No se ha podido ingresar el elemento a la lista')
-    except KeyboardInterrupt:
-        print('Ha terminado de agregar elementos a la lista')
     except:
         print('Ha ocurrido un error')
     print(f'LISTA: {lista}')
