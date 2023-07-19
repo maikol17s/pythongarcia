@@ -20,7 +20,6 @@ def listasExcepciones():
             posicion = int(input('Ingrese la posicion que desea buscar en la lista: '))
             elemento = lista[posicion]
             print(f'En la posición {posicion} se encuentra el elemento {elemento}.')
-            print('--- FIN ---')
             break
         except IndexError:
             print('La posición que desea encontrar no existe.')
@@ -28,5 +27,6 @@ def listasExcepciones():
             print('Ingrese un valor entero valido.')
         except:
             print('Ah ocurrido un error.')
+        print('--- FIN ---')
 
 listasExcepciones()
