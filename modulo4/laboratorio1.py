@@ -2,8 +2,6 @@
 from os import strerror
 
 counters = {chr(ch): 0 for ch in range(ord('a'), ord('z') + 1)}
-
-
 numeros_counter = 0
 caracteres_counter = 0
 caracteres_especiales = "{[/<¡(`^)%;>'}-@#$*,_!+|¿:].?"
