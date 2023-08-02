@@ -6,7 +6,7 @@ def Caracteres(nombreArchivo):
         archivo.close()
         print(f'El archivo tiene {numCaracteres} caracteres.')
     except FileNotFoundError:
-        print(f'El archivo {NombreArchivo} no existe.')
+        print(f'El archivo {nombreArchivo} no existe.')
 
 nombreArchivo = 'Archivo.txt'
 Caracteres(nombreArchivo)

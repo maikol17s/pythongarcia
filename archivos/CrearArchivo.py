@@ -6,7 +6,7 @@ def nuevoArchivo(NombreArchivo):
         print('El archivo ya existe.')
         lineas = archivo.readlines()
         numLineas = len(lineas)
-        print(f'En el archivo hay {ContarLineas} lineas.')
+        print(f'En el archivo hay {numLineas} lineas.')
         archivo.close()
     except FileNotFoundError:
         print('El archivo no existe.')
