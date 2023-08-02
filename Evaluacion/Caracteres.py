@@ -1,6 +1,6 @@
-def Caracteres(NombreArchivo):
+def Caracteres(nombreArchivo):
     try:
-        archivo = open(NombreArchivo, 'r')
+        archivo = open(nombreArchivo, 'r')
         contenido = archivo.read()
         numCaracteres = len(contenido)
         archivo.close()
