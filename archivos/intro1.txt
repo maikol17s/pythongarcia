@@ -1,0 +1,14 @@
+La línea 2 tiene 25 caracteres
+La línea 3 tiene 4 caracteres
+La línea 4 tiene 37 caracteres
+La línea 5 tiene 31 caracteres
+La línea 6 tiene 35 caracteres
+La línea 7 tiene 33 caracteres
+La línea 8 tiene 22 caracteres
+La línea 9 tiene 20 caracteres
+La línea 10 tiene 19 caracteres
+La línea 11 tiene 22 caracteres
+La línea 12 tiene 21 caracteres
+La línea 13 tiene 20 caracteres
+La línea 14 tiene 21 caracteres
+La línea 15 tiene 21 caracteres
