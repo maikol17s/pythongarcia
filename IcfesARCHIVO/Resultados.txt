@@ -1,0 +1,8 @@
+Estrato mas alto es: 0
+Estrato mas bajo es: 0
+Puntaje mas alto de  naturales es : 0
+Puntaje mas bajo de naturales es : 0
+Promedio de puntaje de naturales es: 0.0
+Puntaje mas alto de sociales es: 0
+Puntaje mas bajo de sociales es: 0
+Promedio de puntaje de sociales es: 0.0
