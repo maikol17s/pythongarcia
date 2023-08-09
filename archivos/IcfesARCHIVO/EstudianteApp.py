@@ -2,10 +2,10 @@ from Estudiante import *
 import csv
 estudiantes=[]
 
-with open('IcfesARCHIVO/Saber11.csv','r') as prueba:
+with open('archivos/IcfesARCHIVO/ICFES2019.csv','r') as prueba:
     csvReader=csv.reader(prueba)
     for row in csvReader:
-        obj=Estudiante(row[0],row[0,14],row[0,66],row[0,69])
+        obj=Estudiante(row[0],row[14],row[66],row[69])
         estudiantes.append(obj)
 
 def sumLis(lista):
@@ -35,7 +35,7 @@ estratos=[f1.getEstrato() for f1 in estudiantes]
 PuntoNatu=[f1.getPuntNatu()for f1 in estudiantes ]
 PuntoSocia=[f1.getPuntSociales() for f1 in estudiantes ]
 
-with open('IcfesArchivo/Resultados.txt', 'w') as resultado:
+with open('archivos/IcfesArchivo/Resultados.txt', 'w') as resultado:
     resultado.write('Estrato mas alto es: '+ str(mayLis(estratos)) + '\n')
     resultado.write('Estrato mas bajo es: ' + str(menLis(estratos)) + '\n')
 
